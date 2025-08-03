@@ -42,13 +42,13 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        working-directory: ./terraform
+        working-directory: ./terraform/dropoutapi
         run: terraform init
 
       - name: Terraform Apply
-        working-directory: ./terraform
+        working-directory: ./terraform/dropoutapi
         run: terraform apply -auto-approve -var="project_id=${{ env.PROJECT_ID }}" -var="region=${{ env.REGION }}" -var="image_url=${{ env.IMAGE }}"
 
       - name: Output Cloud Run URL
-        working-directory: ./terraform
+        working-directory: ./terraform/dropoutapi
         run: terraform output cloud_run_url
