@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'dropout-api/**'
-      - '.github/workflows/deploy.churnapi.yml'
+      - '.github/workflows/deploy.dropoutapi.yml'
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
