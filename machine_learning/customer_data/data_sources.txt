@@ -1,0 +1,3 @@
+https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
+
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn?resource=download
