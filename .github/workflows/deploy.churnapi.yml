@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'churn-api/**'
+      - 'terraform/churn-api/**'
       - '.github/workflows/deploy.churnapi.yml'
 
 env:

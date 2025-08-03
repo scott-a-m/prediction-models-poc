@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'dropout-api/**'
+      - 'terraform/dropout-api/**'
       - '.github/workflows/deploy.dropoutapi.yml'
 
 env:
