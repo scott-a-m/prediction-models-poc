@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  churn-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.churnapi
+    ports:
+      - "8080:8080"
+    container_name: churn_api
+    restart: always
+
+  dropout-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dropoutapi
+    ports:
+      - "8081:8081"
+    container_name: dropout_api
+    restart: always

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from  churn_api.app.schema import CustomerInput
+from churn_api.app.schema import CustomerInput
 from churn_api.app.prediction_pipeline import preprocess_data_and_predict
 from churn_api.app.assets_loader import load_model, load_encoders
 
@@ -27,7 +27,7 @@ def predict_churn(data: CustomerInput):
 #   "techsupport": "Yes",
 #   "streamingtv": "No",
 #   "streamingmovies": "No",
-#   "contract": "Yes",
+#   "contract": "Month-to-month",
 #   "paperlessbilling": "Yes",
 #   "paymentmethod": "Electronic check",
 #   "monthlycharges": 30.00,
