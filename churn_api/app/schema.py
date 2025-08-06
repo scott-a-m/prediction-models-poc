@@ -1,22 +1,22 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class CustomerInput(BaseModel):
-    gender: str
-    seniorcitizen: int
-    partner: str
-    dependents: str
-    tenure: int
-    phoneservice: str
-    multiplelines: str
-    internetservice: str
-    onlinesecurity: str
-    onlinebackup: str
-    deviceprotection: str
-    techsupport: str
-    streamingtv: str
-    streamingmovies: str
-    contract: str
-    paperlessbilling: str
-    paymentmethod: str
-    monthlycharges: float
-    totalcharges: str
+    gender: str = Field(..., example="Male")
+    seniorcitizen: int = Field(..., example=0)
+    partner: str = Field(..., example="Yes")
+    dependents: str = Field(..., example="Yes")
+    tenure: int = Field(..., example=12)
+    phoneservice: str = Field(..., example="Yes")
+    multiplelines: str = Field(..., example="Yes")
+    internetservice: str = Field(..., example="Fiber optic")
+    onlinesecurity: str = Field(..., example="No")
+    onlinebackup: str = Field(..., example="Yes")
+    deviceprotection: str = Field(..., example="Yes")
+    techsupport: str = Field(..., example="Yes")
+    streamingtv: str = Field(..., example="No")
+    streamingmovies: str = Field(..., example="No")
+    contract: str = Field(..., example="Month-to-month")
+    paperlessbilling: str = Field(..., example="Yes")
+    paymentmethod: str = Field(..., example="Electronic check")
+    monthlycharges: float = Field(..., example=30.00)
+    totalcharges: str = Field(..., example="80.00")

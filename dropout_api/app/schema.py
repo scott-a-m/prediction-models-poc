@@ -1,39 +1,39 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class StudentInput(BaseModel):
-    marital_status: int
-    application_mode: int
-    application_order: int
-    course: int
-    daytime_evening_attendance: int
-    previous_qualification: int
-    previous_qualification_grade: float
-    nacionality: int
-    mothers_qualification: int
-    fathers_qualification: int
-    mothers_occupation: int
-    fathers_occupation: int
-    admission_grade: float
-    displaced: int
-    educational_special_needs: int
-    debtor: int
-    tuition_fees_up_to_date: int
-    gender: int
-    scholarship_holder: int
-    age_at_enrollment: int
-    international: int
-    curricular_units_1st_sem_credited: int
-    curricular_units_1st_sem_enrolled: int
-    curricular_units_1st_sem_evaluations: int
-    curricular_units_1st_sem_approved: int
-    curricular_units_1st_sem_grade: float
-    curricular_units_1st_sem_without_evaluations: int
-    curricular_units_2nd_sem_credited: int
-    curricular_units_2nd_sem_enrolled: int
-    curricular_units_2nd_sem_evaluations: int
-    curricular_units_2nd_sem_approved: int
-    curricular_units_2nd_sem_grade: float
-    curricular_units_2nd_sem_without_evaluations: int
-    unemployment_rate: float
-    inflation_rate: float
-    gdp: float
+    marital_status: int = Field(..., example=1)
+    application_mode: int = Field(..., example=1)
+    application_order: int = Field(..., example=1)
+    course: int = Field(..., example=33)
+    daytime_evening_attendance: int = Field(..., example=1)
+    previous_qualification: int = Field(..., example=1)
+    previous_qualification_grade: float = Field(..., example=70)
+    nacionality: int = Field(..., example=11)
+    mothers_qualification: int = Field(..., example=4)
+    fathers_qualification: int = Field(..., example=4)
+    mothers_occupation: int = Field(..., example=123)
+    fathers_occupation: int = Field(..., example=123)
+    admission_grade: float = Field(..., example=100)
+    displaced: int = Field(..., example=0)
+    educational_special_needs: int = Field(..., example=0)
+    debtor: int = Field(..., example=0)
+    tuition_fees_up_to_date: int = Field(..., example=1)
+    gender: int = Field(..., example=1)
+    scholarship_holder: int = Field(..., example=1)
+    age_at_enrollment: int = Field(..., example=18)
+    international: int = Field(..., example=0)
+    curricular_units_1st_sem_credited: int = Field(..., example=2)
+    curricular_units_1st_sem_enrolled: int = Field(..., example=2)
+    curricular_units_1st_sem_evaluations: int = Field(..., example=2)
+    curricular_units_1st_sem_approved: int = Field(..., example=2)
+    curricular_units_1st_sem_grade: int = Field(..., example=12)
+    curricular_units_1st_sem_without_evaluations: int = Field(..., example=0)
+    curricular_units_2nd_sem_credited: int = Field(..., example=2)
+    curricular_units_2nd_sem_enrolled: int = Field(..., example=2)
+    curricular_units_2nd_sem_evaluations: int = Field(..., example=2)
+    curricular_units_2nd_sem_approved: int = Field(..., example=2)
+    curricular_units_2nd_sem_grade: int = Field(..., example=10)
+    curricular_units_2nd_sem_without_evaluations: int = Field(..., example=0)
+    unemployment_rate: float = Field(..., example=15)
+    inflation_rate: float = Field(..., example=8)
+    gdp: float = Field(..., example=3.5)
