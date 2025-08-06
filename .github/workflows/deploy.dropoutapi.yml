@@ -7,6 +7,8 @@ on:
       - 'dropout_api/**'
       - 'terraform/dropout_api/**'
       - '.github/workflows/deploy.dropoutapi.yml'
+      - 'Dockerfile.dropoutapi'
+
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
