@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from  dropout_api.app.routes import router
-from churn_api.app.rate_limit_config import limiter, rate_limit_handler
+from dropout_api.app.routes import router
+from dropout_api.app.rate_limit_config import limiter, rate_limit_handler
 from slowapi.errors import RateLimitExceeded
 
 app = FastAPI(title="Student Dropout Prediction API")
