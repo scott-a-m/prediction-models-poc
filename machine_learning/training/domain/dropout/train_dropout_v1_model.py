@@ -72,6 +72,6 @@ y_pred_proba = model.predict_proba(X_test)
 
 print(classification_report(y_test, y_pred))
 
-model_path = Path(__file__).resolve().parents[3] / 'tabular_models' / 'dropout' / 'dropout_model_v1.pkl'
+model_path = Path(__file__).resolve().parents[3] / 'models' / 'dropout' / 'dropout_model_v1.pkl'
 
 joblib.dump(model, model_path)

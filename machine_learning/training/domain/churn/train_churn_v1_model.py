@@ -66,6 +66,6 @@ y_predict = model.predict(X_test)
 
 print(classification_report(y_test, y_predict))
 
-model_path = Path(__file__).resolve().parents[3] / 'tabular_models' / 'churn' / 'churn_model_v1.pkl'
+model_path = Path(__file__).resolve().parents[3] / 'models' / 'churn' / 'churn_model_v1.pkl'
 
 joblib.dump(model, model_path)

@@ -1,6 +1,6 @@
-# Churn & Dropout Prediction APIs
+# Churn & Dropout Prediction Models and APIs
 
-This repository hosts two proof of concept FastAPI services built to predict customer churn and student dropout risk. Each model is trained in reproducible, explainable pipelines using scikit-learn and deployed to **Google Cloud Run** via **Docker**, **Terraform**, and **GitHub Actions**.
+This repository hosts two proof of concept machine learning models and apis built to predict customer churn and student dropout risk. Each model is trained in reproducible, explainable pipelines using scikit-learn and deployed to **Google Cloud Run** via **Docker**, **Terraform**, and **GitHub Actions**.
 
 ---
 
@@ -102,7 +102,7 @@ All models are built using reproducible pipelines that feature:
 - ✅ Dynamic encoding (OneHotEncoder with `handle_unknown='ignore'`)
 - 🧪 Model traning
 
-Each model and encoder is trained using `scikit-learn` and saved as `.pkl` files in `machine_learning/tabular_models` and then ported over to the `machine-learning-assets` folder in each api project.
+Each model and encoder is trained using `scikit-learn` and saved as `.pkl` files in `machine_learning/models` and then ported over to the `machine-learning-assets` folder in each api project.
 
 ---
 
