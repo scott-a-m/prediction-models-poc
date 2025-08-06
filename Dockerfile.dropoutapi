@@ -1,4 +1,4 @@
-# Dockerfile.churn
+# Dockerfile.dropout
 
 FROM python:3.11-slim
 
@@ -9,7 +9,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy churn API code and shared utils
+# Copy dropout API code and shared utils
 COPY dropout_api /app/dropout_api
 COPY shared /app/shared
 
