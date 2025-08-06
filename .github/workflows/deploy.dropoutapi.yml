@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'dropout-api/**'
-      - 'terraform/dropout-api/**'
+      - 'dropout_api/**'
+      - 'terraform/dropout_api/**'
       - '.github/workflows/deploy.dropoutapi.yml'
 
 env:
@@ -43,13 +43,13 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        working-directory: ./terraform/dropout-api
+        working-directory: ./terraform/dropout_api
         run: terraform init
 
       - name: Terraform Apply
-        working-directory: ./terraform/dropout-api
+        working-directory: ./terraform/dropout_api
         run: terraform apply -auto-approve -var="project_id=${{ env.PROJECT_ID }}" -var="region=${{ env.REGION }}" -var="image_url=${{ env.IMAGE }}"
 
       - name: Output Cloud Run URL
-        working-directory: ./terraform/dropout-api
+        working-directory: ./terraform/dropout_api
         run: terraform output cloud_run_url
