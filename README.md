@@ -12,10 +12,15 @@ This repository hosts two proof of concept machine learning models and apis buil
 
 ## 🚀 Live APIs
 
-| Service        | Endpoint                 | Method | Purpose                                   |
+| Service        | Swagger                  | Method | Purpose                                   |
 |----------------|--------------------------|--------|-------------------------------------------|
 | `churn-api`    | `/predict`               | POST   | Predicts if a telecom customer will churn |
 | `dropout-api`  | `/predict`               | POST   | Predicts if a student will drop out       |
+
+You can try out the apis via swagger here: 
+
+- Churn: https://churn-api-204458003569.europe-west2.run.app/docs
+- Dropout: https://dropout-api-204458003569.europe-west2.run.app/docs
 
 ---
 
@@ -23,7 +28,7 @@ This repository hosts two proof of concept machine learning models and apis buil
 
 ### 🔹 Churn Prediction
 
-To understand what the numbers mean, as well what the different options are in the payloads below, see the follow the dataset links above.
+To understand what the numbers mean, as well what the different options are in the payloads below, follow the dataset links above.
 
 ```json
 {
